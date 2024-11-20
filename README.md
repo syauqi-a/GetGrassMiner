@@ -12,8 +12,9 @@ Automate Grass point mining by running a Python script built to handle connectio
 - [Setting up config.json file](#setting-up-configjson-file)
 - [Proxies](#proxies)
   - [Generate Proxies](#generate-proxies)
+- [To Do](#to-do)
 - [Discussion Forum](#discussion-forum)
-- [Support](#support)
+- [Support Me Please](#support-me-please)
 - [Thank You](#thank-you)
 
 # Warnings and Notes
@@ -21,15 +22,16 @@ Automate Grass point mining by running a Python script built to handle connectio
 All risks remain with the user! This program only supports one account.
 
 # Features
+- **Easy to setup!** Even if you don't understand Python at all.
 - Connects to a WebSocket server using proxies.
-- Allow multiple proxies.
-- Handles all kinds of Error such a Dead proxy/ SSL: WRONG_VERSION_NUMBER / invalid length of packed IP address / Empty connect reply / sent 1011 (internal error) keepalive.
-- Automatically removes the dead proxy from the File!
-- Automatically fetch data from API or proxy sources.
+- Allow **multiple proxies**.
+- **Automatically** removes the dead proxy from the File!
+- **Automatically** fetch data from API or proxy sources.
+- Handles all kinds of Error such a `Dead proxy` / `SSL: WRONG_VERSION_NUMBER` / `invalid length of packed IP address` / `Empty connect reply` / `sent 1011 (internal error) keepalive`.
 
 # Registration
 
-If you haven't registered for grass yet, please use the following URL: [Click here](https://app.getgrass.io/register/?referralCode=n_3jaZkKdDJnEcS)
+If you haven't registered for grass yet, **please** use the following URL: [Click here](https://app.getgrass.io/register/?referralCode=n_3jaZkKdDJnEcS)
 
 # How to Use Locally
 
@@ -85,14 +87,14 @@ If you haven't registered for grass yet, please use the following URL: [Click he
 
 In the `.env` file you have to set the user id with yours. If you don't know your user id, do the following steps.
 1. Open the link and log in https://app.getgrass.io/dashboard.
-2. Press F12 on the page to open the console and enter the code (Ctrl + Shift + i) inspect.
+2. Press F12 on the page to open the console (Ctrl + Shift + j).
 3. Copy following code to the console:
    ```javascript
    copy(JSON.parse(localStorage.getItem("userId")))
    ```
-   If you see the warning "Warning: Don't paste code into the DevTools Console that you don't" when pasting the JavaScript code above, type `allow pasting` and press enter first.
+   If you see `Warning: Don't paste code into the DevTools Console that you don't` when pasting the JavaScript code above, type `allow pasting` and press enter and try again.
 
-4. The code above automatically copies the user id to your clipboard, so you just need to paste it into the `.env` file.
+4. The code above automatically copies the user id to your clipboard, so you just need to paste into the `.env` file.
 
 # Setting up config.json file
 
@@ -141,17 +143,25 @@ If you have added the proxy pool list to your `config.json` (see the guide to se
 python UpdateProxiesFile.py
 ```
 
+# To Do
+
+- Added instructions for deployment to AWS EC2
+
 # Discussion Forum
 
 If you have any questions, don't hesitate to ask [me](https://t.me/cutebearrr) or discuss [here](https://github.com/syauqi-a/GetGrassMiner/discussions).
 
-# Support
+# Support Me Please
 
-If you like my project, you can buy me a coffee through the websites below:
+If you like my project, you can **buy me a coffee** through the websites below:
   
 - USDT (BNB Smart Chain (BEP20)) Address: `0x5389781e243db1c3bb5b3e734a17d8c5eb963106`
 - TON Address: `EQD5mxRgCuRNLxKxeOjG6r14iSroLF5FtomPnet-sgP5xNJb` (`136075219`)
 - SOLANA Address: `Hn4G1XZmKcdWRPWTS4UX59wRA2cuDZ3uQE28fCjQ6sRb`
+
+Prefer to **buy me cendol**? Try one of them:
+- GoPay, Dana, ShopeePay: `082240495501`
+- Trakteer.id: send me a [tip](https://trakteer.id/cutebearrr/tip).
 
 # Thank You
 Thank you for taking the time to check out my repository! This project is inspired by two amazing individuals, [@Solana0x](https://github.com/Solana0x) and [@akasakaid](https://github.com/akasakaid). You guys are awesome!
