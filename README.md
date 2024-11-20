@@ -154,4 +154,4 @@ If you like my project, you can buy me a coffee through the websites below:
 - SOLANA Address: `Hn4G1XZmKcdWRPWTS4UX59wRA2cuDZ3uQE28fCjQ6sRb`
 
 # Thank You
-Thank you for taking the time to check out my repository! This project is inspired by two amazing individuals, @Solana0x and @akasakaid. You guys are awesome!
+Thank you for taking the time to check out my repository! This project is inspired by two amazing individuals, [@Solana0x](https://github.com/Solana0x) and [@akasakaid](https://github.com/akasakaid). You guys are awesome!
