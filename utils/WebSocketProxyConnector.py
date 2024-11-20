@@ -37,7 +37,6 @@ class WebSocketProxyConnector:
         self.max_retries = conn_config["max_retries"]
         self.retry_delay = conn_config["retry_delay"]
         self.interval_ping = conn_config["interval_ping"]
-        self.max_timeout = conn_config["max_timeout"]
 
         ext_config = config["extension"]
         self.extension_id = ext_config["id"]

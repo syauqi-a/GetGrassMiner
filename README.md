@@ -118,7 +118,6 @@ For usage examples, see the `config.json.example` file. Here's an explanation of
 | connection.max_retries | integer | Maximum limit of attempts to make connections to Websockets. |
 | connection.retry_delay | integer | The retry time delay establishes a connection to Websockets. |
 | connection.interval_ping | integer | Delay time sends ping messages to Websocket. |
-| connection.max_timeout | integer | Timeout when establishing connection to Websocket. |
 ||||
 | extension | dictionary ||
 | extension.id | string ||

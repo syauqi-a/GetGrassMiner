@@ -10,8 +10,7 @@
         "number_of_proxies": 50,
         "max_retries": 5,
         "retry_delay": 1,
-        "interval_ping": 120,
-        "max_timeout": 1000
+        "interval_ping": 120
     },
     "extension" : {
         "id": "4.26.2",
