@@ -1,0 +1,36 @@
+{
+    "proxy": {
+        "filename": "proxies.txt",
+        "auto_fetch_new": false,
+        "pool_list": [
+            {
+                "response_format": "json",
+                "url": "https://dummy.com/file.json",
+                "proxy_list_key": "proxies",
+                "proxy_key": "proxy"
+            },
+            {
+                "response_format": "text",
+                "url": "https://dummy.com/file.txt"
+            },
+            {
+                "response_format": "csv",
+                "url": "https://dummy.com/file.csv",
+                "proxy_row": "proxy"
+            }
+        ]
+    },
+    "connection": {
+        "ws_url": "wss://proxy2.wynd.network:4650/",
+        "ws_url2": "wss://proxy2.wynd.network:4444/",
+        "number_of_proxies": 100,
+        "max_retries": 10,
+        "retry_delay": 1,
+        "interval_ping": 120,
+        "max_timeout": 1000
+    },
+    "extension" : {
+        "id": "4.26.2",
+        "version" : "lkbnfiajjmbhnfledhphioinpickokdi"
+    }
+}
