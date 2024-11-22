@@ -176,8 +176,8 @@ class WebSocketProxyConnector:
 
                 logger.info("Proxy queue is empty trying add from proxies file.")
                 async with self.lock:
-                    fetch_new_proxies(self.proxy_pool_list)
-                    new_proxies = get_proxies_from_file()
+                    fetch_new_proxies(self.proxy_pool_list, self.proxy_path)
+                    new_proxies = get_proxies_from_file(self.proxy_path)
 
                     if new_proxies == []:
                         proxy_queue.task_done()
@@ -188,7 +188,7 @@ class WebSocketProxyConnector:
 
 
     async def start(self):
-        proxies = get_proxies_from_file()
+        proxies = get_proxies_from_file(self.proxy_path)
         if proxies == []:
             logger.warning(
                 "Your proxies.txt file is empty, please add proxy data first."

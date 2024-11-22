@@ -1,18 +1,17 @@
 {
     "proxy": {
         "filename": "proxies.txt",
-        "auto_fetch_new": true,
+        "auto_fetch_new": false,
         "pool_list": []
     },
     "connection": {
         "ws_url": "wss://proxy2.wynd.network:4650/",
         "ws_url2": "wss://proxy2.wynd.network:4444/",
-        "number_of_proxies": 50,
-        "max_retries": 5,
+        "number_of_proxies": 100,
+        "max_retries": 10,
         "retry_delay": 1,
         "interval_ping": 120,
         "max_timeout": 10
-
     },
     "extension" : {
         "id": "4.26.2",
