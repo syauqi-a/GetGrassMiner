@@ -1,9 +1,9 @@
 '''
- # @ Author: CuteBearrr
- # @ Create Time: 2024-11-20 13:04:23
- # @ Modified by: CuteBearrr
- # @ Modified time: 2024-11-20 14:37:26
- # @ Filename: WebSocketProxyConnector.py
+ # @ Author: Your name
+ # @ Create Time: 2024-11-22 16:22:46
+ # @ Modified by: Your name
+ # @ Modified time: 2024-11-22 16:25:34
+ # @ Description:
  '''
 
 import asyncio
@@ -169,7 +169,6 @@ class WebSocketProxyConnector:
                 if not success:
                     logger.opt(colors=True).warning(f"<yellow>{proxy_str}</yellow> Connection Failed.")
 
-
             if proxy_queue.empty():
                 if self.auto_fetch == False:
                     proxy_queue.task_done()
@@ -185,7 +184,6 @@ class WebSocketProxyConnector:
                     for proxy in new_proxies:
                         if proxy:
                             await proxy_queue.put(proxy)
-
 
     async def start(self):
         proxies = get_proxies_from_file(self.proxy_path)
