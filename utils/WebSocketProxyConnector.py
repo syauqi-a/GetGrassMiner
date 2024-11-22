@@ -37,6 +37,7 @@ class WebSocketProxyConnector:
         self.max_retries = conn_config["max_retries"]
         self.retry_delay = conn_config["retry_delay"]
         self.interval_ping = conn_config["interval_ping"]
+        self.max_timeout = conn_config["max_timeout"]
 
         ext_config = config["extension"]
         self.extension_id = ext_config["id"]
@@ -78,7 +79,8 @@ class WebSocketProxyConnector:
                     ws_url,
                     proxy=proxy,
                     ssl=ssl_context,
-                    extra_headers=custom_header
+                    extra_headers=custom_header,
+                    proxy_conn_timeout=self.max_timeout
                 ) as websocket:
                     send_ping_task = asyncio.create_task(
                         self.ping(websocket, proxy_str)
