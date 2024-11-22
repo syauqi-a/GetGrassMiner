@@ -172,6 +172,7 @@ class WebSocketProxyConnector:
             if proxy_queue.empty():
                 if self.auto_fetch == False:
                     proxy_queue.task_done()
+                    break
 
                 logger.info("Proxy queue is empty trying add from proxies file.")
                 async with self.lock:
