@@ -1,7 +1,9 @@
 # GetGrassMiner
+
 An **easy-to-use** automated Grass point mining, by running a Python script built to handle connections to WebSockets. You can use multiple devices and IP addresses to maximize earnings. This program was tested on Windows OS using Python version 3.10.
 
 # Table of Contents
+
 - [GetGrassMiner](#getgrassminer)
 - [Table of Contents](#table-of-contents)
 - [Warnings and Notes](#warnings-and-notes)
@@ -12,7 +14,6 @@ An **easy-to-use** automated Grass point mining, by running a Python script buil
 - [Setting up config.json file](#setting-up-configjson-file)
 - [Proxies](#proxies)
   - [Generate Proxies](#generate-proxies)
-- [To Do](#to-do)
 - [Discussion Forum](#discussion-forum)
 - [Support Me Please](#support-me-please)
 - [Thank You](#thank-you)
@@ -22,12 +23,14 @@ An **easy-to-use** automated Grass point mining, by running a Python script buil
 All risks remain with the user! This program only supports one account.
 
 # Features
+
 - **Easy to setup!** Even if you don't understand Python at all.
 - Connects to a WebSocket server using proxies.
 - Allow **multiple proxies**.
 - **Automatically** removes the dead proxy from the File!
 - **Automatically** fetch data from API or proxy sources.
 - Handles all kinds of Error such a `Dead proxy` / `SSL: WRONG_VERSION_NUMBER` / `invalid length of packed IP address` / `Empty connect reply` / `sent 1011 (internal error) keepalive`.
+- [**NEW!!!**] Deployment steps using AWS EC2. Available in [English](Deploy%20to%20AWS.md) and [Bahasa](Deploy%20to%20AWS_ID.md).
 
 # Registration
 
@@ -124,7 +127,6 @@ For usage examples, see the `config.json.example` file. Here's an explanation of
 | extension.id | string ||
 | extension.version | string ||
 
-
 # Proxies
 
 Save the proxy list in the [proxies file](proxies.txt). The format used follows the following example:
@@ -141,10 +143,6 @@ If you have added the proxy pool list to your `config.json` (see the guide to se
 python UpdateProxiesFile.py
 ```
 
-# To Do
-
-- Added instructions for deployment to AWS EC2.
-
 # Discussion Forum
 
 If you have any questions, don't hesitate to ask [me](https://t.me/cutebearrr) or discuss [here](https://github.com/syauqi-a/GetGrassMiner/discussions).
@@ -158,10 +156,13 @@ If you like my project, you can **buy me a coffee** through the websites below:
   You can use this address to send any other currency available on [Binance](https://accounts.binance.com/register?ref=NKF1BXTV). Get **10% commission** on every trade if you use my link.
 
 - TON Address: `EQD5mxRgCuRNLxKxeOjG6r14iSroLF5FtomPnet-sgP5xNJb` (MEMO: `136075219`).
+
 - SOLANA Address: `Hn4G1XZmKcdWRPWTS4UX59wRA2cuDZ3uQE28fCjQ6sRb`.
 
 Prefer to **buy me cendol**? Try one of them:
+
 - Trakteer.id: send me a [tip](https://trakteer.id/cutebearrr/tip).
 
 # Thank You
+
 Thank you for taking the time to check out my repository! This project is inspired by two amazing individuals, [@Solana0x](https://github.com/Solana0x) and [@akasakaid](https://github.com/akasakaid). You guys are awesome!
